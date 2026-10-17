@@ -1,0 +1,140 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  background: #b6b6b6;
+  margin: 0;
+  padding: 32px;
+  color: #333;
+}
+
+/* Área principal */
+.container {
+  max-width: 580px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  text-align: center;
+  color: #9b2141;
+}
+
+/* Organiza campo e botão */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+/* Campo de entrada */
+input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* Botões */
+button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #9b2141;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7d1837;
+}
+
+/* Mensagens de validação e feedback */
+#mensagem {
+  min-height: 24px;
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+}
+
+.mensagem-erro {
+  color: #bf1f3d;
+}
+
+.contador-texto {
+  margin: 0 0 16px;
+  font-size: 1rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  padding: 14px 16px;
+  background: #f2eef4;
+  border-radius: 12px;
+  list-style: none;
+  transition: background 0.2s ease;
+}
+
+li.item:hover {
+  background: #e9e3ec;
+}
+
+li.item span {
+  flex: 1;
+}
+
+li.comprado span {
+  color: #7d7d7d;
+  text-decoration: line-through;
+}
+
+.botao-remover {
+  border: none;
+  background: #d93d4c;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botao-remover:hover {
+  background: #b83241;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  button {
+    width: 100%;
+  }
+  
+  .botao-remover {
+    padding: 8px 12px;
+  }
+}
